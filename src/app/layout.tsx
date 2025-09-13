@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/sonner"
 import MySessionProvider from "@/MySessionProvider/MySessionProvider";
 import Footer from "./_components/Footer/Footer";
 import CartContextProvider from "@/contexts/CartContext";
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script> */}
+        <Script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
