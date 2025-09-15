@@ -54,7 +54,7 @@ export default function MainSlider() {
               <Image
                 src={src}
                 alt={`Slide ${index + 1}`}
-                layout="fill"
+                fill
                 style={{ objectFit: 'cover' }}
                 priority={index === 0}
               />
