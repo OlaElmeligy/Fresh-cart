@@ -7,7 +7,6 @@ import { Toaster } from "@/components/ui/sonner"
 import MySessionProvider from "@/MySessionProvider/MySessionProvider";
 import Footer from "./_components/Footer/Footer";
 import CartContextProvider from "@/contexts/CartContext";
-import Script from "next/script";
 
 
 const geistSans = Geist({

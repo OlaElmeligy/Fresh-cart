@@ -1,7 +1,5 @@
 //'use client' msh 75leha kda 3shan SEO lazm products tkon server side and that is why we did addbtn in seperate component and be useclient
 
-
-
 import getProducts from '@/api/productsApi'
 import { ProductType } from '@/types/product.type'
 import Image from 'next/image'

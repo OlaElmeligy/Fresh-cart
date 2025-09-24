@@ -45,7 +45,7 @@ setCartId(response.cartId)
       }
     }
     catch (err) {
-      console.log(err)
+  throw new Error("error " );
     }
     finally {
       setLoading(false)
@@ -163,7 +163,7 @@ else if (sign === "-"){
                           src={product.product.imageCover || '/placeholder-image.jpg'}
                           alt={product.product.title}
                           className="w-20 h-20 object-cover rounded-md border"
-                          
+                          width={500} height={300}
                         />
                       </div>
                       

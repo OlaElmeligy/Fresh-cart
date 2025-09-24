@@ -22,8 +22,9 @@ export default function ProductDetails({ params }  : {params : Promise<{id : str
 
         setProductData(data)
         setLoading(false)
-      } catch (error) {
+      } catch (err) {
         // console.error('Error fetching product:', error)
+
         setLoading(false)
       }
     }

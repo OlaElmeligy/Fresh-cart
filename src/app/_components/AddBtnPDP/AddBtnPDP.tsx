@@ -15,13 +15,13 @@ if(!context) throw new Error("not exist")
 async function checkAddToCart(id : string){
 
    const response = await addTocart(id)
-       console.log("product", response)
+      //  console.log("product", response)
        if (response.status === "success") {
          toast.success("Product added successfully", { position: "top-center", duration: 2000 })
          setNumOfCartItem(numOfCartItem + 1)
        }
        else {
-         toast.error(response.message, { position: "top-center", duration: 2000 })
+         toast.error("Please login to be able to add to cart", { position: "top-center", duration: 2000 })
        }   
      }
 
